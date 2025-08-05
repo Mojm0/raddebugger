@@ -48,3 +48,4 @@ jobs:
           call build torture debug no_meta || exit /b 1
           cd build
           torture -l:radlink || exit /b 1
+
